@@ -18,9 +18,10 @@
     - Code
     - Latex
     - Dot
-  - File
+  - Embedded
     - PDF
     - TXT
+    - Webview
   - Construct
     - Include
   - Struction

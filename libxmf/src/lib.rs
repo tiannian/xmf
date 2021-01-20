@@ -1,9 +1,11 @@
+#![no_std]
+
+extern crate alloc;
+
 mod block;
-pub use block::Block;
 
-mod json;
-pub use json::{Json, JsonRelation};
+//mod json;
 
-pub mod basic;
-pub mod media;
-pub mod snippet;
+//pub mod basic;
+//pub mod media;
+//pub mod snippet;

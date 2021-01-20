@@ -24,12 +24,16 @@ impl Default for Json {
     }
 }
 
+pub trait ToJson {
+    fn to_json(&self, json: &mut Json);
+}
+
 impl Json {
     pub fn insert_single(&mut self, v: Value) {
         self.blocks.push(v);
     }
 
     pub fn debug_json(&self) {
-        println!("{}", serde_json::to_string_pretty(self).unwrap());
+//        println!("{}", serde_json::to_string_pretty(self).unwrap());
     }
 }
